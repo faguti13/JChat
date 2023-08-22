@@ -2,10 +2,7 @@ import javax.swing.*;
 
 import java.awt.event.*;
 
-import java.io.DataOutputStream;
-import java.io.IOException;
-import java.io.ObjectOutputStream;
-import java.io.Serializable;
+import java.io.*;
 import java.net.*;
 
 public class Cliente {
@@ -36,7 +33,7 @@ class MarcoCliente extends JFrame{
 	
 }
 
-class LaminaMarcoCliente extends JPanel{
+class LaminaMarcoCliente extends JPanel implements Runnable{
 	
 	public LaminaMarcoCliente(){
 
@@ -66,22 +63,26 @@ class LaminaMarcoCliente extends JPanel{
 
 		miboton.addActionListener(mievento);
 
-		add(miboton);	
+		add(miboton);
+
+		Thread mihilo=new Thread(this);
+
+		mihilo.start();
 		
 	}
-	
-	
-	
+
+
 	private class EnviaTexto implements ActionListener{
 
 		@Override
 		public void actionPerformed(ActionEvent e) {
 
-
 			//System.out.println(campo1.getText());
 
+			campochat.append("\n" + campo1.getText());
+
 			try {
-				Socket misocket=new Socket("127.0.0.1",9999);
+				Socket misocket=new Socket("192.168.0.15",9999);
 
 				PaqueteEnvio datos=new PaqueteEnvio();
 
@@ -121,7 +122,39 @@ class LaminaMarcoCliente extends JPanel{
 	private JTextArea campochat;
 
 	private JButton miboton;
-	
+
+
+	@Override
+	public void run() {
+
+		try{
+
+			ServerSocket servidor_cliente=new ServerSocket(9090);
+
+			Socket cliente;
+
+			PaqueteEnvio paqueteRecibido;
+
+			while (true){
+
+				cliente=servidor_cliente.accept();
+
+				ObjectInputStream flujo_entrada=new ObjectInputStream(cliente.getInputStream());
+
+				paqueteRecibido= (PaqueteEnvio) flujo_entrada.readObject();
+
+				campochat.append("\n" + paqueteRecibido.getNick() + ": " + paqueteRecibido.getMensaje());
+
+
+
+			}
+
+		} catch (Exception e){
+
+			System.out.println(e.getMessage());
+		}
+
+	}
 }
 
 class PaqueteEnvio implements Serializable{
@@ -152,10 +185,3 @@ class PaqueteEnvio implements Serializable{
 		this.mensaje = mensaje;
 	}
 }
-
-
-
-
-
-
-
