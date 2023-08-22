@@ -11,6 +11,12 @@
   <component name="ChangeListManager">
     <list default="true" id="69c5fe0f-4afd-41b9-9d4c-4e51c781e5c4" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/.idea/artifacts/Tarea_Datos_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/Tarea_Datos_1_jar/Cliente.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Tarea Datos 1/.idea/artifacts/Tarea_Datos_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Tarea Datos 1/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Tarea Datos 1/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
