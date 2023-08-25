@@ -10,33 +10,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="69c5fe0f-4afd-41b9-9d4c-4e51c781e5c4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JChat/Cliente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JChat/Servidor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Tarea_Datos_1_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Tarea_Datos_1_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cliente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JChat/Cliente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JChat/Servidor.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Servidor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tarea Datos 1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Tarea Datos 1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Tarea_Datos_1_jar/Cliente.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tarea Datos 1/.idea/artifacts/Tarea_Datos_1_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tarea Datos 1/.idea/artifacts/Tarea_Datos_1_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Tarea Datos 1/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tarea Datos 1/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tarea Datos 1/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tarea Datos 1/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tarea Datos 1/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tarea Datos 1/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Tarea Datos 1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tarea Datos 1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tarea Datos 1/Cliente.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tarea Datos 1/LaminaMarcoCliente$EnviaTexto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tarea Datos 1/LaminaMarcoCliente.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Tarea Datos 1/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tarea Datos 1/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tarea Datos 1/MarcoCliente.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tarea Datos 1/MarcoServidor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tarea Datos 1/PaqueteEnvio.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tarea Datos 1/Servidor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tarea Datos 1/Tarea Datos 1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tarea Datos 1/Tarea Datos 1.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +42,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/FabianGJ/Desktop/JChat-master",
+    "last_opened_file_path": "C:/Users/FabianGJ/Downloads/JChat-aa4ddfd3764afeeb11bf564c5f23fd5c6d26fe47",
     "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2"

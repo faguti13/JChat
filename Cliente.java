@@ -1,5 +1,3 @@
-package JChat;
-
 import javax.swing.*;
 
 import java.awt.event.*;
@@ -13,15 +11,17 @@ import java.net.*;
  */
 
 public class Cliente {
+
 	/**
 	 * Método principal que se ejecuta al iniciar el programa
 	 * @param args Método principal que se ejecuta al iniciar el programa
 	 * @author Adrián Muñoz Alvarado y Fabián Gutiérrez Jiménez con ayuda del canal de YouYube pildorasinformaticas
 	 */
+
 	public static void main(String[] args) { // Método principal que se ejecuta al iniciar el programa
-		
+
 		MarcoCliente mimarco=new MarcoCliente(); // Crea un objeto de tipo MarcoCliente y lo muestra en pantalla
-		
+
 		mimarco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // Establece la operación por defecto al cerrar el marco
 
 	}
@@ -38,7 +38,9 @@ public class Cliente {
  * Versión: 1
  * Fecha última modificación: Agosto 25 de 2023
  */
+
 class MarcoCliente extends JFrame{
+
 	/**
 	 *         Instituto Tecnológico de Costa Rica
 	 *             Ingenería en Computadores
@@ -49,17 +51,18 @@ class MarcoCliente extends JFrame{
 	 * Versión: 1
 	 * Fecha última modificación: Agosto 25 de 2023
 	 */
-	public MarcoCliente(){ // Constructor de la clase que inicializa el marco
+
+	public MarcoCliente(){// Constructor de la clase que inicializa el marco
 		
-		setBounds(600,300,280,350);// Establece la posición y el tamaño del marco
-				
-		LaminaMarcoCliente milamina=new LaminaMarcoCliente();// Crea un objeto de tipo LaminaMarcoCliente y lo añade al marco
-		
+		setBounds(600,300,280,350); // Establece la posición y el tamaño del marco
+
+		LaminaMarcoCliente milamina=new LaminaMarcoCliente(); // Crea un objeto de tipo LaminaMarcoCliente y lo añade al marco
+
 		add(milamina);
 		
 		setVisible(true);
-		}
-
+		}	
+	
 }
 
 /**
@@ -72,8 +75,9 @@ class MarcoCliente extends JFrame{
  * Versión: 1
  * Fecha última modificación: Agosto 25 de 2023
  */
-class LaminaMarcoCliente extends JPanel implements Runnable{
 
+class LaminaMarcoCliente extends JPanel implements Runnable{
+	
 	public LaminaMarcoCliente(){
 
 		nick=new JTextField(5);
@@ -103,9 +107,11 @@ class LaminaMarcoCliente extends JPanel implements Runnable{
 
 		miboton.addActionListener(mievento); // Crea un objeto de tipo EnviaTexto y lo asigna como oyente del botón de enviar
 
+
 		add(miboton);
 
 		Thread mihilo=new Thread(this); // Crea e inicia un hilo de ejecución
+
 
 		mihilo.start();
 		
@@ -114,7 +120,9 @@ class LaminaMarcoCliente extends JPanel implements Runnable{
 	/**
 	 *
 	 */
+
 	private class EnviaTexto implements ActionListener{
+
 		/**
 		 *         Instituto Tecnológico de Costa Rica
 		 *             Ingenería en Computadores
@@ -126,8 +134,11 @@ class LaminaMarcoCliente extends JPanel implements Runnable{
 		 * Fecha última modificación: Agosto 25 de 2023
 		 * @param e el mensaje escrito para ser enviado al servidor
 		 */
+
 		@Override
 		public void actionPerformed(ActionEvent e) {
+
+			//System.out.println(campo1.getText());
 
 			campochat.append("\n" + campo1.getText());
 
@@ -142,11 +153,19 @@ class LaminaMarcoCliente extends JPanel implements Runnable{
 
 				datos.setMensaje(campo1.getText());
 
-				ObjectOutputStream paquete_datos=new ObjectOutputStream(misocket.getOutputStream()); // Crea un flujo de salida de objetos para enviar el paquete de datos al servidor
+				ObjectOutputStream paquete_datos=new ObjectOutputStream(misocket.getOutputStream());
 
 				paquete_datos.writeObject(datos);
 
 				misocket.close(); // Cierra el socket
+
+				/*DataOutputStream flujo_salida=new DataOutputStream(misocket.getOutputStream());
+
+				flujo_salida.writeUTF(campo1.getText());
+
+				flujo_salida.close();*/
+
+
 
 			} catch (UnknownHostException e1) {
 				e1.printStackTrace();
@@ -164,6 +183,7 @@ class LaminaMarcoCliente extends JPanel implements Runnable{
 	private JTextArea campochat; // Este área de texto muestra el historial de mensajes del chat
 
 	private JButton miboton; // Este botón envía el mensaje escrito en el campo de texto al servidor
+
 
 	@Override
 	public void run() {
@@ -208,6 +228,7 @@ class LaminaMarcoCliente extends JPanel implements Runnable{
  * Versión: 1
  * Fecha última modificación: Agosto 25 de 2023
  */
+
 class PaqueteEnvio implements Serializable{
 
 	private String nick, ip, mensaje; // Atributos privados que almacenan el nick, la ip y el mensaje del usuario
