@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"JChat","l":"Cliente"},{"p":"JChat","l":"Servidor"}];updateSearchResults();

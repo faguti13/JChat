@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"JChat","c":"Cliente","l":"Cliente()","u":"%3Cinit%3E()"},{"p":"JChat","c":"Cliente","l":"main(String[])","u":"main(java.lang.String[])"},{"p":"JChat","c":"Servidor","l":"main(String[])","u":"main(java.lang.String[])"},{"p":"JChat","c":"Servidor","l":"Servidor()","u":"%3Cinit%3E()"}];updateSearchResults();
